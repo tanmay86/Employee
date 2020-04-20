@@ -6,11 +6,11 @@ const employee = mongoose.model('Employees');
 
 router.get('/', (req, res) => {
 
+    res.json('connected')
+    // employee.find({}, function (err, docs) {
 
-    employee.find({}, function (err, docs) {
-
-        res.json(docs);
-    });
+    //     res.json(docs);
+    // });
 
 
 
